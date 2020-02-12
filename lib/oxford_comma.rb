@@ -5,6 +5,6 @@ def oxford_comma(list)
     list.join(" and ")
   else
     list.last = "and " + list.last
-    
+    list.join(", ")
   end
 end
