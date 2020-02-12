@@ -4,5 +4,7 @@ def oxford_comma(list)
   elsif list.size == 2
     list.join(" and ")
   else
+    list.last = "and " + list.last
+    
   end
 end
