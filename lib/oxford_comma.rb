@@ -4,7 +4,7 @@ def oxford_comma(list)
   elsif list.size == 2
     list.join(" and ")
   else
-    list.last = "and #{list.last}"
+    list[list.size - 1] = "and #{list[list.size - 1]}"
     list.join(", ")
   end
 end
